@@ -2,9 +2,7 @@ const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { webpack } = require('webpack');
 module.exports = {
-  entry: {
-    common:'./src/main.js',
-  },
+  entry: './src/gTool.js',
   output: {
     filename: './js/[name].[chunkhash].js',
     path: path.resolve(__dirname, 'dist'),

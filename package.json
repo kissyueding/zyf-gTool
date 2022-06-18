@@ -2,30 +2,36 @@
   "name": "zyf-gtool",
   "version": "1.0.0",
   "description": "My favorite tools JavaScript, including (date)",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack", 
-    "build:prod": "webpack --mode production"
-  },
+  "main": "lib/gTool.umd.min.js",
+  "keyword": "gTool",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kissyueding/zyf-gTool.git"
+    "url": "git+https://github.com/gjTool/gjTool.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --config webpack.config.js",
+    "build": "webpack",
+    "build:prod": "webpack --mode production",
+    "lib": "webpack --mode lib --name zyfGtool --dest lib src/gTool.js"
   },
   "keywords": [
     "gTool"
   ],
   "author": "zyf",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/kissyueding/zyf-gTool/issues"
   },
   "homepage": "https://github.com/kissyueding/zyf-gTool#readme",
+  "devDependencies": {
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  },
   "dependencies": {
     "@babel/core": "^7.18.5",
     "@babel/preset-env": "^7.18.2",
     "babel-loader": "^8.2.5",
-    "core-js": "^3.23.1",
-    "webpack-cli": "^4.10.0"
+    "core-js": "^3.23.1"
   }
 }
