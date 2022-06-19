@@ -1,6 +1,6 @@
 {
   "name": "zyf-gtool",
-  "version": "1.0.2",
+  "version": "1.0.9",
   "description": "My favorite tools JavaScript, including (date)",
   "main": "dist/gTool.js",
   "keyword": "gTool",

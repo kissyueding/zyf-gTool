@@ -12,7 +12,6 @@ npm install zyf-gtool
 import gTool from "zyf-gtool";  //var gTool = require("gTool");
 
 <script type="text/javascript" src="../node_modules/zyf-gtool/dist/gTool.js"></script>
-<script type="text/javascript" src="../node_modules/zyf-gtool/dist/gToolDate.js"></script>
 ```
 
 # api
