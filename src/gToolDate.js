@@ -1,4 +1,4 @@
-/**gjTool.js
+/**gTool.js
  * 常用方法工具
  * @author Gao Jin
  * @update 2018/03/16 17:53
@@ -110,4 +110,4 @@
             return parseInt(Math.abs(starts - ends) / 1000 / 60 / 60 / 24) // 把相差的毫秒数转换为天数
         }
 	});
- })(gjTool)
+ })(gTool)
