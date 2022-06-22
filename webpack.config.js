@@ -4,7 +4,7 @@ const { webpack } = require('webpack');
 module.exports = {
   entry: './src/gTool.js',
   output: {
-    filename: './js/[name].[chunkhash].js',
+    filename: './js/[name].js',
     path: path.resolve(__dirname, 'dist'),
     environment: {
       // 是否使用箭头函数 置output.environment，告诉 webpack 在生成的运行时代码中可以使用哪个版本的 ES 特性

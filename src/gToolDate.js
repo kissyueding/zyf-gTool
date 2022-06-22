@@ -108,6 +108,32 @@
             const starts = Date.parse(new Date(G.symbolChange(start)))
             const ends = Date.parse(new Date(G.symbolChange(end)))
             return parseInt(Math.abs(starts - ends) / 1000 / 60 / 60 / 24) // 把相差的毫秒数转换为天数
-        }
+        },
+        getDayDiffDayHourMinutesSecond: function(start, end) {
+            G.errorFunction(start, end)
+            const start = new Date(G.symbolChange(start)).getTime()
+            const end = new Date(G.symbolChange(end)).getTime()
+            // 获取相差秒数
+            const sub = Math.ceil((end - start) / 1000)
+
+            // 获取天数
+            const day = Math.floor(sub / (60 * 60 * 24))
+
+            // 获取小时 sub % (60 * 60 * 24)取余不满1天的秒数
+            const hour = Math.floor(sub % (60 * 60 * 24) / (60 * 60))
+
+            // 获取分钟 sub % ( 60 * 60 )取余不满1小时的秒数
+            const minutes = Math.floor(sub % ( 60 * 60 ) / 60)
+
+            // 获取秒 sub % 60 取余不满1分钟的
+            const sec = Math.floor(sub % 60)
+
+            return {
+                day: day,
+                hour: hour,
+                minutes: minutes,
+                sec: sec
+            }
+        },
 	});
  })(gjTool)
