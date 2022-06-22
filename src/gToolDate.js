@@ -1,4 +1,4 @@
-/**gjTool.js
+/**gTool.js
  * 常用方法工具
  * @author Gao Jin
  * @update 2018/03/16 17:53
@@ -29,20 +29,20 @@
                     dateValue = dateValueb
                     break;
                 case 'yyyy-mm-dd hh:mm:ss':
-                    dateValue = dateValueb + ' ' + dateHourValuea
+                    dateValue = dateValuea + ' ' + dateHourValuea
                     break;
                 case 'yyyy-mm-dd hh:mm':
-                    dateValue = dateValueb + ' ' + dateHourValueb
+                    dateValue = dateValuea + ' ' + dateHourValueb
                     break;
                 // 格式 2022-01-12
                 case 'yyyy-mm-dd':
                     dateValue = dateValuea
                     break;
                 case 'yyyy/mm/dd hh:mm:ss':
-                    dateValue = dateValuea + ' ' + dateHourValuea
+                    dateValue = dateValueb + ' ' + dateHourValuea
                     break;
                 case 'yyyy/mm/dd hh:mm':
-                    dateValue = dateValuea + ' ' + dateHourValueb
+                    dateValue = dateValueb + ' ' + dateHourValueb
                     break;
                 case 'hh':
                     dateValue = hours
@@ -136,4 +136,4 @@
             }
         },
 	});
- })(gjTool)
+ })(gTool)

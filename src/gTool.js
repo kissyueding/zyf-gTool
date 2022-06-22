@@ -4,7 +4,7 @@
  *  @update 2022/06/18
  */
  (function(g, fn) {
-	g.gjTool = fn(g);
+	g.gTool = fn(g);
 	if(typeof define === 'function' && define.amd) {
 		define(function() {
 			return fn(g)
@@ -16,10 +16,10 @@
 	}
 })(typeof window !== 'undefined' ? window : this, function(g) {
 	'use strict';
-	var gjTool = (function() {
-		//定义gjTool类
+	var gTool = (function() {
+		//定义gTool类
 		var G = function(selector, context) {}
-		//定义extend扩展方法，方便为gjTool扩展插件
+		//定义extend扩展方法，方便为gTool扩展插件
 		G.extend = function(obj) {
 			var args = arguments;
 			if(args.length < 2) {
@@ -59,7 +59,7 @@
 		})
 		return G
 	})();
-	g.gjTool = gjTool;
-	g.$ === undefined && (g.$ = gjTool);
-	return gjTool;
+	g.gTool = gTool;
+	g.$ === undefined && (g.$ = gTool);
+	return gTool;
 })
