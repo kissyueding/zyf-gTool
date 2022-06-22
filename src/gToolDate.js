@@ -109,12 +109,13 @@
             const ends = Date.parse(new Date(G.symbolChange(end)))
             return parseInt(Math.abs(starts - ends) / 1000 / 60 / 60 / 24) // 把相差的毫秒数转换为天数
         },
+        // 获取两个日期之间的天数/小时/分钟/秒数
         getDayDiffDayHourMinutesSecond: function(start, end) {
             G.errorFunction(start, end)
-            const start = new Date(G.symbolChange(start)).getTime()
-            const end = new Date(G.symbolChange(end)).getTime()
+            const startTime = new Date(G.symbolChange(start)).getTime()
+            const endTime = new Date(G.symbolChange(end)).getTime()
             // 获取相差秒数
-            const sub = Math.ceil((end - start) / 1000)
+            const sub = Math.ceil((endTime - startTime) / 1000)
 
             // 获取天数
             const day = Math.floor(sub / (60 * 60 * 24))

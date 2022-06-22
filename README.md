@@ -80,3 +80,11 @@ desc: 获取两个日期之间的天数
 
 use: gTool.getDayDiff(start, end)
 
+### getDayDiffDayHourMinutesSecond
+
+desc: 获取两个日期之间的天数/小时/分钟/秒数
+
+use: gTool.getDayDiffDayHourMinutesSecond(start, end)
+
+callback: {day:'', hour:'', minutes:'', sec: ''}
+

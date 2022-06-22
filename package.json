@@ -1,12 +1,12 @@
 {
   "name": "zyf-gtool",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "My favorite tools JavaScript, including (date)",
   "main": "dist/gTool.js",
   "keyword": "gTool",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kissyueding/zyf-gTool/issues"
+    "url": "git+https://github.com/kissyueding/zyf-gTool"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
